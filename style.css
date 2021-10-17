@@ -1,0 +1,11 @@
+#personne {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+img{
+    width:100px;
+    clip-path:ellipse(50% 50%);
+}
