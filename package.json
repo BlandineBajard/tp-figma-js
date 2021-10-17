@@ -1,0 +1,30 @@
+{
+  "name": "tp-figma",
+  "version": "1.0.0",
+  "description": "TP sur JavaScript, API et Parcell",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BlandineBajard/tp-figma-js.git"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "js",
+    "api",
+    "reqres",
+    "parcell"
+  ],
+  "author": "Blandine Bajard et Vincent Ramiere",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BlandineBajard/tp-figma-js/issues"
+  },
+  "homepage": "https://github.com/BlandineBajard/tp-figma-js#readme",
+  "devDependencies": {
+    "parcel": "^2.0.0"
+  }
+}
