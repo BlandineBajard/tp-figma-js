@@ -1,11 +1,21 @@
-#personne {
+h1 {
+    text-align: center;
+}
+
+#bloc1 {
+    text-align: left;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
+}
+
+#fiche{
+    background-color: rgba(237, 236, 254, 1);
 }
 
 img{
     width:100px;
     clip-path:ellipse(50% 50%);
+}
+
+#nom, #prenom {
+    display: inline;
 }
