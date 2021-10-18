@@ -50,6 +50,7 @@ fetch(API_URL)
 })
 .then(responsFormat2 => {
     console.log(responsFormat2);
+    MEMBER.innerHTML = " ";
     for(let index = 0; index <6; index++){
         console.log(responsFormat2.data[index]);
         const PERSONNE = responsFormat2.data[index];
