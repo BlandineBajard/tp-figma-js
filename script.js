@@ -16,30 +16,32 @@ fetch(API_URL)
 .then(responsFormat => {
     console.log(responsFormat);
     for(let index = 0; index <6; index++){
-    NOM.innerText = responsFormat.data[0].last_name;
-    PRENOM.innerText = responsFormat.data[0].first_name;
-    IDENTIFIANT.innerText = responsFormat.data[0].id;
-    EMAIL.innerText = responsFormat.data[0].email;
-    AVATAR.src = responsFormat.data[0].avatar;
-}
-
-for(let index = 0; index <6; index++){
-        console.log(data[0]);
-        console.log(data[index]);
-        const PERSONNE = responsFormat[data[0]];
+        console.log(responsFormat.data[index]);
+        const PERSONNE = responsFormat.data[index];
         console.log(PERSONNE);
+    
+        MEMBER.innerHTML +=`
+        <div>
+        <p>${PERSONNE.last_name}</p>
+        <p>${PERSONNE.first_name}</p>
+        <p>${PERSONNE.id}</p>
+        <p>${PERSONNE.email}</p>
+        <img src="${PERSONNE.avatar}" alt="">
+        </div>
+    `
 
-MEMBER.innerHTML +=`
-<div>
-<p>${PERSONNE.last_name}</p>
-<p>${PERSONNE.first_name}</p>
-<p>${PERSONNE.id}</p>
-<p>${PERSONNE.email}</p>
-<img src="${PERSONNE.avatar}" alt="">
-</div>
-`
+       /* NOM.innerText = responsFormat.data[0].last_name;
+        PRENOM.innerText = responsFormat.data[0].first_name;
+        IDENTIFIANT.innerText = responsFormat.data[0].id;
+        EMAIL.innerText = responsFormat.data[0].email;
+        AVATAR.src = responsFormat.data[0].avatar;*/
+
+    }
+
+
 }
-})
+)
+
 
 
 .catch(err => {
