@@ -15,12 +15,13 @@ fetch(API_URL)
 })
 .then(responsFormat => {
     console.log(responsFormat);
+    for(let index = 0; index <6; index++){
     NOM.innerText = responsFormat.data[0].last_name;
     PRENOM.innerText = responsFormat.data[0].first_name;
     IDENTIFIANT.innerText = responsFormat.data[0].id;
     EMAIL.innerText = responsFormat.data[0].email;
     AVATAR.src = responsFormat.data[0].avatar;
-
+}
 
 for(let index = 0; index <6; index++){
         console.log(data[0]);
