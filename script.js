@@ -1,10 +1,10 @@
-const NOM = document.getElementById('nom');
-const PRENOM = document.getElementById('prenom');
-const IDENTIFIANT = document.getElementById('identifiant');
-const EMAIL = document.getElementById('email');
-const AVATAR = document.getElementById('avatar');
+/*const NOM = document.getElementsByClassName('nom');
+const PRENOM = document.getElementsByClassName('prenom');
+const IDENTIFIANT = document.getElementsByClassName('identifiant');
+const EMAIL = document.getElementsByClassName('email');
+const AVATAR = document.getElementsByClassName('avatar');*/
 const MEMBER = document.getElementById('personne');
-
+console.log(MEMBER);
 const API_URL = "https://reqres.in/api/users?page=1";
 
 
@@ -21,12 +21,12 @@ fetch(API_URL)
         console.log(PERSONNE);
     
         MEMBER.innerHTML +=`
-        <div = fiche>
+        <div class = "fiche">
         <img src="${PERSONNE.avatar}" alt="Photo d'identité">
-        <p id= "nom">${PERSONNE.last_name}</p>
-        <p id="prenom">${PERSONNE.first_name}</p>
-        <p id ="identifiant">${PERSONNE.id}</p>
-        <p id = "email">${PERSONNE.email}</p>
+        <p class= "nom">${PERSONNE.last_name}</p>
+        <p class="prenom">${PERSONNE.first_name}</p>
+        <p class ="identifiant">${PERSONNE.id}</p>
+        <p class = "email">${PERSONNE.email}</p>
         </div>
     `
 

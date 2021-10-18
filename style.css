@@ -2,13 +2,20 @@ h1 {
     text-align: center;
 }
 
-#bloc1 {
+.bloc1 {
     text-align: left;
 }
 
-#personne{
+.fiche{
     background-color: rgba(237, 236, 254, 1);
+
+}
+
+#personne{
     display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 img{
@@ -16,6 +23,6 @@ img{
     clip-path:ellipse(50% 50%);
 }
 
-#nom, #prenom {
+.nom, .prenom {
     display: inline;
 }
