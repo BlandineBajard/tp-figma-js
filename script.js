@@ -4,6 +4,8 @@ const IDENTIFIANT = document.getElementsByClassName('identifiant');
 const EMAIL = document.getElementsByClassName('email');
 const AVATAR = document.getElementsByClassName('avatar');*/
 const MEMBER = document.getElementById('personne');
+const BUTTON = document.getElementById('page2');
+
 console.log(MEMBER);
 const API_URL = "https://reqres.in/api/users?page=1";
 fetch(API_URL)
