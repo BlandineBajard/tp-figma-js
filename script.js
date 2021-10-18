@@ -23,7 +23,7 @@ fetch(API_URL)
         MEMBER.innerHTML +=`
         <div class = "fiche">
         <img src="${PERSONNE.avatar}" alt="Photo d'identité">
-        <p class= "nom">${PERSONNE.last_name} + ${PERSONNE.first_name}</p>
+        <p class= "nom">${PERSONNE.last_name}  ${PERSONNE.first_name}</p>
         <!--<p class="prenom">${PERSONNE.first_name}</p>-->
         <p class ="identifiant">${PERSONNE.id}</p>
         <p class = "email">${PERSONNE.email}</p>
@@ -56,8 +56,8 @@ fetch(API_URL)
         MEMBER.innerHTML +=`
         <div class="fiche">
         <img src="${PERSONNE.avatar}" alt="Photo d'identité">
-        <p class="nom">${PERSONNE.last_name}</p>
-        <p class ="prenom">${PERSONNE.first_name}</p>
+        <p class= "nom">${PERSONNE.last_name}  ${PERSONNE.first_name}</p>
+        <!--<p class="prenom">${PERSONNE.first_name}</p>-->
         <p class="identifiant">${PERSONNE.id}</p>
         <p class="email">${PERSONNE.email}</p>
         </div>
