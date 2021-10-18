@@ -7,11 +7,13 @@ h1 {
 }
 
 .fiche{
+    width: 200px;
     background-color: rgba(237, 236, 254, 1);
 
 }
 
 #personne{
+    margin-top : 100px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -19,10 +21,16 @@ h1 {
 }
 
 img{
-    width:100px;
+    margin-top: -50px;
+    width:150px;
     clip-path:ellipse(50% 50%);
 }
 
-.nom, .prenom {
-    display: inline;
+.nom {
+    font-weight: 900;
+    font-size: large;
+}
+.email {
+    font-size: medium;
+    font-weight: 700;
 }
