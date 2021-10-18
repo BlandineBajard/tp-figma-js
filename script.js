@@ -21,12 +21,12 @@ fetch(API_URL)
         console.log(PERSONNE);
     
         MEMBER.innerHTML +=`
-        <div>
-        <p>${PERSONNE.last_name}</p>
-        <p>${PERSONNE.first_name}</p>
-        <p>${PERSONNE.id}</p>
-        <p>${PERSONNE.email}</p>
-        <img src="${PERSONNE.avatar}" alt="">
+        <div = fiche>
+        <img src="${PERSONNE.avatar}" alt="Photo d'identité">
+        <p id= "nom">${PERSONNE.last_name}</p>
+        <p id="prenom">${PERSONNE.first_name}</p>
+        <p id ="identifiant">${PERSONNE.id}</p>
+        <p id = "email">${PERSONNE.email}</p>
         </div>
     `
 
