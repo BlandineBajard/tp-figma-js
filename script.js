@@ -5,6 +5,7 @@ const EMAIL = document.getElementsByClassName('email');
 const AVATAR = document.getElementsByClassName('avatar');*/
 const MEMBER = document.getElementById('personne');
 const BUTTON = document.getElementById('page2');
+const BUTTON1 = document.getElementById('page1')
 
 console.log(MEMBER);
 const API_URL = "https://reqres.in/api/users?page=1";
@@ -65,6 +66,39 @@ fetch(API_URL)
 }
 
 })
+
+
+}
+)
+
+BUTTON1.addEventListener('click', ()=>{
+    const API_PAGE1 = "https://reqres.in/api/users?page=1";
+    fetch(API_PAGE1)
+.then((response1) => {
+console.log(response1);
+return response1.json()
+})
+.then(responsFormat1 => {
+console.log(responsFormat1);
+MEMBER.innerHTML = " ";
+for(let index = 0; index <6; index++){
+    console.log(responsFormat1.data[index]);
+    const PERSONNE = responsFormat1.data[index];
+    console.log(PERSONNE);
+
+    MEMBER.innerHTML +=`
+    <div class="fiche">
+    <img src="${PERSONNE.avatar}" alt="Photo d'identité">
+    <p class= "nom">${PERSONNE.last_name}  ${PERSONNE.first_name}</p>
+    <!--<p class="prenom">${PERSONNE.first_name}</p>-->
+    <p class="identifiant">${PERSONNE.id}</p>
+    <p class="email">${PERSONNE.email}</p>
+    </div>
+`
+}
+
+}
+)
 
 
 }
